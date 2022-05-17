@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Cougar Hotel</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+     
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet"> 
+
+        <!-- Vendor CSS File -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="vendor/slick/slick.css" rel="stylesheet">
+        <link href="vendor/slick/slick-theme.css" rel="stylesheet">
+        <link href="vendor/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+        <!-- Main Stylesheet File -->
+        <link href="css/hover-style.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Header Section Start -->
+        <header id="header">
+            <a href="index.html" class="logo"><img src="img/Kean_Seal.png" alt="logo"></a>
+            <div class="phone"><i class="fa fa-phone"></i>+1 111 222 3333</div>
+            <div class="mobile-menu-btn"><i class="fa fa-bars"></i></div>
+            <nav class="main-menu top-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="room.html">Rooms</a></li>
+                    <li><a href="javascript:login()">Login</a></li>
+                    <li><a href="javascript:logout()">Logout</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="member.html">Member Details</a></li>
+                    <li><a href="details.html">Room Details</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Header Section End -->
+        
+        <!-- Search Section Start -->
+        <div id="search" style="background: #f2f2f2;">
+            <div class="container">
+                <div class="form-row">
+                    <div class="control-group col-md-3">
+                        <label>Check-In</label>
+                        <input type="date" id="check-in" value="0">
+                   
+                        <label>Check-Out</label>
+                        <input type="date" id="check-out" value="0">
+                        </div>
+                    </div>
+                    <br>
+                    <label>Room Type</label>
+                    <select id="room_type">
+                        <option value="1">Standard Single</option>
+                        <option value="2">Standard Queen</option>
+                        <option value="3">Standard King</option>
+                        <option value="4">Double King</option>
+                      </select>
+                    <div class="control-group col-md-3">
+                        <button class="btn btn-block" onclick="book_hotel()">Book Room</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Search Section End -->
+        
+        <!-- Room Section Start -->
+        <div id="rooms">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Rooms</h2>
+                    <p>
+                        Please browse our collection  of rooms!
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="room-img">
+                                    <div class="box12">
+                                        <img src="img/room/room-1.jpg">
+                                        <div class="box-content">
+                                            <h3 class="title">Standard Single</h3>
+                                            <ul class="icon">
+                                                <li><a href="#" data-toggle="modal" data-target="#modal-id"><i class="fa fa-link"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="room-des">
+                                    <h3><a href="#" data-toggle="modal" data-target="#modal-id">Standard Single</a></h3>
+                                    <p>Standard Single comes with 1 Single Bed</p>
+                                    <ul class="room-size">
+                                        <li><i class="fa fa-arrow-right"></i>Beds: 1 Single(s) </li>
+                                    </ul>
+                                    <ul class="room-icon">
+                                        <li class="icon-1"></li>
+                                        <li class="icon-2"></li>
+                                        <li class="icon-3"></li>
+                                        <li class="icon-4"></li>
+                                        <li class="icon-5"></li>
+                                        <li class="icon-6"></li>
+                                        <li class="icon-7"></li>
+                                        <li class="icon-8"></li>
+                                        <li class="icon-9"></li>
+                                        <li class="icon-10"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="room-rate">
+                                    <h3>From</h3>
+                                    <h1>$199</h1>
+                                    <a href="#">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="room-img">
+                                    <div class="box12">
+                                        <img src="img/room/room-2.jpg">
+                                        <div class="box-content">
+                                            <h3 class="title">Standard Queen</h3>
+                                            <ul class="icon">
+                                                <li><a href="#" data-toggle="modal" data-target="#modal-id"><i class="fa fa-link"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="room-des">
+                                    <h3><a href="#" data-toggle="modal" data-target="#modal-id">Standard Queen</a></h3>
+                                    <p>Standard Queen comes with 1 Queen Bed</p>
+                                    <ul class="room-size">
+                                        <li><i class="fa fa-arrow-right"></i>Beds: 1 Queen(s) </li>
+                                    </ul>
+                                    <ul class="room-icon">
+                                        <li class="icon-1"></li>
+                                        <li class="icon-2"></li>
+                                        <li class="icon-3"></li>
+                                        <li class="icon-4"></li>
+                                        <li class="icon-5"></li>
+                                        <li class="icon-6"></li>
+                                        <li class="icon-7"></li>
+                                        <li class="icon-8"></li>
+                                        <li class="icon-9"></li>
+                                        <li class="icon-10"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="room-rate">
+                                    <h3>From</h3>
+                                    <h1>$299</h1>
+                                    <a href="#">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="room-img">
+                                    <div class="box12">
+                                        <img src="img/room/room-3.jpg">
+                                        <div class="box-content">
+                                            <h3 class="title">Standard King</h3>
+                                            <ul class="icon">
+                                                <li><a href="#" data-toggle="modal" data-target="#modal-id"><i class="fa fa-link"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="room-des">
+                                    <h3><a href="#" data-toggle="modal" data-target="#modal-id">Standard King</a></h3>
+                                    <p>Standard King comes with 1 King Bed</p>
+                                    <ul class="room-size">
+                                        <li><i class="fa fa-arrow-right"></i>Beds: 1 King(s) </li>
+                                    </ul>
+                                    <ul class="room-icon">
+                                        <li class="icon-1"></li>
+                                        <li class="icon-2"></li>
+                                        <li class="icon-3"></li>
+                                        <li class="icon-4"></li>
+                                        <li class="icon-5"></li>
+                                        <li class="icon-6"></li>
+                                        <li class="icon-7"></li>
+                                        <li class="icon-8"></li>
+                                        <li class="icon-9"></li>
+                                        <li class="icon-10"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="room-rate">
+                                    <h3>From</h3>
+                                    <h1>$399</h1>
+                                    <a href="#">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="room-img">
+                                    <div class="box12">
+                                        <img src="img/room/room-4.jpg">
+                                        <div class="box-content">
+                                            <h3 class="title">Double Queen</h3>
+                                            <ul class="icon">
+                                                <li><a href="#" data-toggle="modal" data-target="#modal-id"><i class="fa fa-link"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="room-des">
+                                    <h3><a href="#" data-toggle="modal" data-target="#modal-id">Double Queen</a></h3>
+                                    <p>Double Queen comes with 2 Queen Beds</p>
+                                    <ul class="room-size">
+                                        <li><i class="fa fa-arrow-right"></i>Beds: 2 Queens(s) </li>
+                                    </ul>
+                                    <ul class="room-icon">
+                                        <li class="icon-1"></li>
+                                        <li class="icon-2"></li>
+                                        <li class="icon-3"></li>
+                                        <li class="icon-4"></li>
+                                        <li class="icon-5"></li>
+                                        <li class="icon-6"></li>
+                                        <li class="icon-7"></li>
+                                        <li class="icon-8"></li>
+                                        <li class="icon-9"></li>
+                                        <li class="icon-10"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="room-rate">
+                                    <h3>From</h3>
+                                    <h1>$329</h1>
+                                    <a href="#">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Room Section End -->
+        
+        <!-- Modal for Room Section Start -->
+        <div id="modal-id" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="port-slider">
+                                    <div><img src="img/room-slider/room-1.jpg"></div>
+                                    <div><img src="img/room-slider/room-2.jpg"></div>
+                                    <div><img src="img/room-slider/room-3.jpg"></div>
+                                    <div><img src="img/room-slider/room-4.jpg"></div>
+                                    <div><img src="img/room-slider/room-5.jpg"></div>
+                                    <div><img src="img/room-slider/room-6.jpg"></div>
+                                </div>
+                                <div class="port-slider-nav">
+                                    <div><img src="img/room-slider/room-1.jpg"></div>
+                                    <div><img src="img/room-slider/room-2.jpg"></div>
+                                    <div><img src="img/room-slider/room-3.jpg"></div>
+                                    <div><img src="img/room-slider/room-4.jpg"></div>
+                                    <div><img src="img/room-slider/room-5.jpg"></div>
+                                    <div><img src="img/room-slider/room-6.jpg"></div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h2>Lorem ipsum dolor</h2>
+                                <p>
+                                    Lorem ipsum dolor viverra purus imperdiet rhoncus imperdiet. Suspendisse vulputate condimentum ligula sollicitudin hendrerit. Phasellus luctus, elit et ultrices interdum, neque mi pellentesque massorci. Nam in cursus ex, nec mattis lectus. Curabitur quis elementum nunc. Mauris iaculis, justo eu aliquam sagittis, arcu eros cursus libero, sit amet eleifend dolor odio at lacus. 
+                                </p>
+                                <div class="modal-link">
+                                    <a href="#">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal for Room Section End -->
+        
+        <!-- Footer Section Start -->
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="social">
+                            <a href=""><li class="fa fa-instagram"></li></a>
+                            <a href=""><li class="fa fa-twitter"></li></a>
+                            <a href=""><li class="fa fa-facebook-f"></li></a>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <p>Group 3</p>
+						<p>BootStrap 5</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Section End -->
+        
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <!-- Vendor JavaScript File -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/jquery/jquery-migrate.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="vendor/easing/easing.min.js"></script>
+        <script src="vendor/stickyjs/sticky.js"></script>
+        <script src="vendor/superfish/hoverIntent.js"></script>
+        <script src="vendor/superfish/superfish.min.js"></script>
+        <script src="vendor/wow/wow.min.js"></script>
+        <script src="vendor/slick/slick.min.js"></script>
+        <script src="vendor/tempusdominus/js/moment.min.js"></script>
+        <script src="vendor/tempusdominus/js/moment-timezone.min.js"></script>
+        <script src="vendor/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+        
+        <!-- Booking Javascript File -->
+        <script src="booking.js"></script>
+        <script src="js/jqBootstrapValidation.min.js"></script>
+  
+        <!-- Main Javascript File -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
